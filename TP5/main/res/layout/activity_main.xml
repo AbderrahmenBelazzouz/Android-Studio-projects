@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/question" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="5dp"
+        android:hint="Points :"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/lune"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/score"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+
+
+    <EditText
+        android:id="@+id/ldeux"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/lune"
+        android:hint="\?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/ltrois"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/ldeux"
+        android:hint="\?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/lquatre"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/ltrois"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+
+
+    <Button
+        android:id="@+id/verification"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/lune"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:onClick="buclick"
+        android:text=">>" />
+
+    <ImageView
+        android:id="@+id/good"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/verification"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="289dp"
+        android:layout_marginTop="-280dp"
+        android:src="@drawable/good"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/bad"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/verification"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="-280dp"
+        android:src="@drawable/bad"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
